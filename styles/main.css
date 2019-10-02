@@ -8,21 +8,46 @@ body {
   margin: 0 0 0 0;
   padding: 0 0 0 0; }
 
+header {
+  border-bottom: 5px solid black;
+  margin: 1em 0 0;
+  padding: 0 1em 1em;
+  font-family: sans-serif; }
+  header p {
+    margin: 0;
+    margin-left: 2px;
+    font-weight: 200;
+    width: 30em;
+    max-width: 100%;
+    line-height: 1.3em;
+    font-style: italic; }
+
 h1 {
-  margin: .5em 0;
-  padding: 0 0 0.5em 1em;
-  font-family: sans-serif;
-  border-bottom: 5px solid black; }
+  margin: 0; }
 
 .wrapper {
-  margin: 0 10vw; }
+  margin: 50px 10vw; }
+
+.caption {
+  margin: 20px 0; }
+
+hr {
+  border: 1px solid #aaa;
+  margin: 0; }
+
+@media screen and (min-width: 770px) {
+  .wrapper {
+    margin: 50px 20vw; } }
+
+@media screen and (min-width: 1025px) {
+  .wrapper {
+    margin: 50px 30vw; } }
 
 .albers-interaction {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  background-color: #f2f2f2;
-  margin-top: 50px; }
+  background-color: #f2f2f2; }
   .albers-interaction .inner {
     width: 87%;
     margin: 0 auto; }
@@ -91,16 +116,12 @@ h1 {
     transform: scale(0.8) translateX(-62%) rotate(22.5deg); } }
 
 @media screen and (min-width: 770px) {
-  .wrapper {
-    margin: 0 20vw; }
   .albers-interaction .header .subtitle {
     font-size: 3vw; }
   .albers-interaction .footer p {
     font-size: 0.75vw; } }
 
 @media screen and (min-width: 1025px) {
-  .wrapper {
-    margin: 0 30vw; }
   .albers-interaction .header .subtitle {
     font-size: 2vw; }
   .albers-interaction .footer p {

@@ -1,0 +1,48 @@
+.debug * {
+  border: 1px solid red;
+}
+html * {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+header {
+  border-bottom: 5px solid black;
+  margin: 1em 0 0;
+  padding: 0 1em 1em;
+  font-family: sans-serif;
+  p {
+    margin: 0;
+    margin-left: 2px;
+    font-weight: 200;
+    width: 30em;
+    max-width: 100%;
+    line-height: 1.3em;
+    font-style: italic;
+  }
+}
+h1 {
+  margin: 0;
+}
+.wrapper {
+  margin: 50px 10vw;
+}
+.caption {
+  margin: 20px 0;
+}
+hr {
+  border: 1px solid #aaa;
+  margin: 0;
+}
+@media screen and (min-width: 770px) {
+  .wrapper {
+    margin: 50px 20vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .wrapper {
+    margin: 50px 30vw;
+  }
+}

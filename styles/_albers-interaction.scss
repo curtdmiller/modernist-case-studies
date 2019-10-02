@@ -1,28 +1,8 @@
-.debug * {
-  border: 1px solid red;
-}
-html * {
-  box-sizing: border-box;
-}
-body {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-}
-h1 {
-  margin: .5em 0;
-  padding: 0 0 0.5em 1em;
-  font-family: sans-serif;
-  border-bottom: 5px solid black;
-}
-.wrapper {
-  margin: 0 10vw;
-}
 .albers-interaction {
   position: relative;
   width: 100%;
   margin: 0 auto;
   background-color: #f2f2f2;
-  margin-top: 50px;
 
   .inner {
     width: 87%;
@@ -112,9 +92,6 @@ h1 {
   }
 }
 @media screen and (min-width: 770px) {
-  .wrapper {
-    margin: 0 20vw;
-  }
   .albers-interaction {
     .header {
       .subtitle {
@@ -129,9 +106,6 @@ h1 {
   }
 }
 @media screen and (min-width: 1025px) {
-  .wrapper {
-    margin: 0 30vw;
-  }
   .albers-interaction {
     .header {
       .subtitle {
