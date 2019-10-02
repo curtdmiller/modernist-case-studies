@@ -51,12 +51,15 @@ h1 {
     margin: 0;
   }
   .footer {
+    position: relative;
     margin: 0;
     padding: 4% 0 7%;
+    line-height: .75vw;
     p {
         font-size: 1vw;
         position: relative;
         left: 77%;
+        display: inline-block;
     }
   }
   .square {
