@@ -61,6 +61,7 @@ h1 {
   }
   .square {
     margin: 0 auto;
+    transition: all 500ms;
   }
   .square-outer {
     position: relative;
@@ -88,6 +89,13 @@ h1 {
     height: 0;
     padding-bottom: 74.74%;
     background-color: #225ba4;
+  }
+  &:hover {
+    .square-center,
+    .square-inner {
+      top: 10%;
+      transform: scale(.8) translateX(-62%) rotate(22.5deg);
+    }
   }
 }
 @media screen and (min-width: 770px) {
