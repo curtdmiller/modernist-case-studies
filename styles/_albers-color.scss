@@ -82,7 +82,7 @@
       transform: rotate(4.5deg) translateX(2%) translateY(-115%);
     }
   }
-  &:hover {
+  &.touched {
     .boxes {
       .box:nth-of-type(1),
       .box:nth-of-type(2),
@@ -100,6 +100,24 @@
   }
 }
 
+@media screen and (any-hover: hover) {
+  .albers-color:hover {
+    .boxes {
+      .box:nth-of-type(1),
+      .box:nth-of-type(2),
+      .box:nth-of-type(3),
+      .box:nth-of-type(4),
+      .box:nth-of-type(5),
+      .box:nth-of-type(6),
+      .box:nth-of-type(7),
+      .box:nth-of-type(8) {
+        transform: rotate(0);
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}
 @media screen and (min-width: 770px) {
   .albers-color {
     .header {

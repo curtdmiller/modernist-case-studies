@@ -79,10 +79,16 @@ h1 {
     height: 0;
     padding-bottom: 74.74%;
     background-color: #225ba4; }
+  .albers-interaction.touched .square-center,
+  .albers-interaction.touched .square-inner {
+    top: 10%;
+    transform: scale(0.8) translateX(-62%) rotate(22.5deg); }
+
+@media screen and (any-hover: hover) {
   .albers-interaction:hover .square-center,
   .albers-interaction:hover .square-inner {
     top: 10%;
-    transform: scale(0.8) translateX(-62%) rotate(22.5deg); }
+    transform: scale(0.8) translateX(-62%) rotate(22.5deg); } }
 
 @media screen and (min-width: 770px) {
   .wrapper {
@@ -169,6 +175,19 @@ h1 {
       background-color: #9f0022;
       z-index: 3;
       transform: rotate(4.5deg) translateX(2%) translateY(-115%); }
+  .albers-color.touched .boxes .box:nth-of-type(1),
+  .albers-color.touched .boxes .box:nth-of-type(2),
+  .albers-color.touched .boxes .box:nth-of-type(3),
+  .albers-color.touched .boxes .box:nth-of-type(4),
+  .albers-color.touched .boxes .box:nth-of-type(5),
+  .albers-color.touched .boxes .box:nth-of-type(6),
+  .albers-color.touched .boxes .box:nth-of-type(7),
+  .albers-color.touched .boxes .box:nth-of-type(8) {
+    transform: rotate(0);
+    left: 0;
+    top: 0; }
+
+@media screen and (any-hover: hover) {
   .albers-color:hover .boxes .box:nth-of-type(1),
   .albers-color:hover .boxes .box:nth-of-type(2),
   .albers-color:hover .boxes .box:nth-of-type(3),
@@ -179,7 +198,7 @@ h1 {
   .albers-color:hover .boxes .box:nth-of-type(8) {
     transform: rotate(0);
     left: 0;
-    top: 0; }
+    top: 0; } }
 
 @media screen and (min-width: 770px) {
   .albers-color .header .author {

@@ -23,7 +23,7 @@ function serve() {
 
 	gulp.watch( './index.html', gulp.series(reload) );
 	gulp.watch( './styles/**/*.scss', gulp.series(styles) );
-	// gulp.watch( './js/*.js', gulp.series(reload) );
+	gulp.watch( '*.js', gulp.series(reload) );
 }
 
 exports.reload = reload;
