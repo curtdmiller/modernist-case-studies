@@ -2,6 +2,9 @@ var gulp = require( 'gulp' );
 var sass = require( 'gulp-sass' );
 var browserSync = require( 'browser-sync' ).create();
 
+var rev = require( 'gulp-rev' );
+var revRewrite = require( 'gulp-rev-rewrite' );
+
 function styles() {
 	return gulp.src( './styles/**/*.scss' )
     .pipe( sass().on( 'error', sass.logError ) )
@@ -26,8 +29,26 @@ function serve() {
 	gulp.watch( '*.js', gulp.series(reload) );
 }
 
+function revision(){
+	return gulp.src( './styles/main.css' )
+		.pipe( rev() )
+		.pipe( gulp.dest( 'styles' ) )
+		.pipe( rev.manifest() )
+		.pipe( gulp.dest( 'styles' ) )
+}
+function revwrite(){
+	var manifest = gulp.src( 'styles/rev-manifest.json' );
+
+	return gulp.src( '**/*.html' )
+		.pipe( revRewrite( { manifest } ) )
+		.pipe( gulp.dest( './' ) )
+}
+
 exports.reload = reload;
 exports.styles = styles;
 exports.serve = serve;
+exports.revision = revision;
+exports.revwrite = revwrite;
 
 exports.default = serve;
+exports.revise = gulp.series( revision, revwrite );
