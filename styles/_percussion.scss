@@ -1,0 +1,186 @@
+.percussion {
+  border: 1px solid #aaa;
+  padding: 1.5% 3% 1%;
+  background-color: #f7f2e1;
+  .header {
+    margin: 0;
+    padding: 0;
+    border: none;
+    .top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        position: relative;
+        top: 3px;
+        font-family: presicav, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2vw;
+        letter-spacing: 0.05em;
+        margin: 0;
+      }
+      svg {
+        width: 16%;
+      }
+    }
+    h2 {
+      margin: 0;
+      font-family: 'Domine', serif;
+      font-size: 6.32vw;
+
+    }
+    svg.percussion-title {
+      width: 100%;
+      height: auto;
+      margin: 1.5% auto 4%;
+    }
+  }
+  .body {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .square-group {
+      .square {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+        background: black;
+      }
+      &.large {
+        width: 13.5%;
+      }
+      &.small {
+        width: 4.5%;
+        transform: translate(0) rotate(0);
+      }
+    }
+    .square-group:nth-child(1) {
+      .square:nth-of-type(1) {
+        transform: translate(130%, 0) rotate(47deg);
+      }
+      .square:nth-of-type(2) {
+        transform: translate(17%, -35%) rotate(4deg);
+      }
+      .square:nth-of-type(3) {
+        transform: translate(108%, 30%) rotate(38deg);
+      }
+      .square:nth-of-type(4) {
+        transform: translate(37%, 23%) rotate(22deg);
+      }
+      .square:nth-of-type(5) {
+        transform: translate(196%, 18%) rotate(-15deg);
+      }
+    }
+    .square-group:nth-child(2) {
+      .square:nth-of-type(1) {
+        transform: translate(-60%, 80%) rotate(-12deg);
+      }
+      .square:nth-of-type(2) {
+        transform: translate(862%, 300%) rotate(14deg);
+      }
+      .square:nth-of-type(3) {
+        transform: translate(-150%, 288%) rotate(15deg);
+      }
+      .square:nth-of-type(4) {
+        transform: translate(-1055%, 250%) rotate(30deg);
+      }
+      .square:nth-of-type(5) {
+        transform: translate(115%, 190%) rotate(40deg);
+      }
+      .square:nth-of-type(6) {
+        transform: translate(-248%, 360%) rotate(15deg);
+      }
+      .square:nth-of-type(7) {
+        transform: translate(-158%, 420%) rotate(-5deg);
+      }
+      .square:nth-of-type(8) {
+        transform: translate(220%, 540%) rotate(-30deg);
+      }
+      .square:nth-of-type(9) {
+        transform: translate(-595%, 650%) rotate(15deg);
+      }
+    }
+    .square-group:nth-child(3) {
+      .square:nth-of-type(1) {
+        transform: translate(-25%, 5%) rotate(-16deg);
+      }
+      .square:nth-of-type(2) {
+        transform: translate(-159%, -56%) rotate(27deg);
+      }
+      .square:nth-of-type(3) {
+        transform: translate(-32%, 44%) rotate(-26deg);
+      }
+      .square:nth-of-type(4) {
+        transform: translate(-183%, 13%) rotate(-8deg);
+      }
+      .square:nth-of-type(5) {
+        transform: translate(-85%, 18%) rotate(17deg);
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 12.5% 0 0;
+    p {
+      font-family: sans-serif;
+      font-weight: 200;
+      margin: 0;
+      &:nth-child(1) {
+        font-size: 1.2vw;
+      }
+      &:nth-child(2) {
+        font-size: .8vw;
+      }
+    }
+  }
+}
+@media screen and (min-width: 770px) {
+  .percussion {
+    .header {
+      .top {
+        p {
+          font-size: 1.3vw;
+        }
+      }
+    }
+    .footer {
+      p {
+        &:nth-child(1) {
+          font-size: .8vw;
+        }
+        &:nth-child(2) {
+          font-size: .6vw;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1025px) {
+  .percussion {
+    .header {
+      .top {
+        p {
+          font-size: .9vw;
+        }
+      }
+    }
+    .footer {
+      p {
+        &:nth-child(1) {
+          font-size: .6vw;
+        }
+        &:nth-child(2) {
+          font-size: .4vw;
+        }
+      }
+    }
+  }
+}

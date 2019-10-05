@@ -240,3 +240,121 @@ hr {
   .albers-color .header .subtitle {
     font-size: 1.25vw;
     padding-top: 2px; } }
+
+.percussion {
+  border: 1px solid #aaa;
+  padding: 1.5% 3% 1%;
+  background-color: #f7f2e1; }
+  .percussion .header {
+    margin: 0;
+    padding: 0;
+    border: none; }
+    .percussion .header .top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      .percussion .header .top p {
+        position: relative;
+        top: 3px;
+        font-family: presicav, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2vw;
+        letter-spacing: 0.05em;
+        margin: 0; }
+      .percussion .header .top svg {
+        width: 16%; }
+    .percussion .header h2 {
+      margin: 0;
+      font-family: 'Domine', serif;
+      font-size: 6.32vw; }
+    .percussion .header svg.percussion-title {
+      width: 100%;
+      height: auto;
+      margin: 1.5% auto 4%; }
+  .percussion .body {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .percussion .body .square-group .square {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      background: black; }
+    .percussion .body .square-group.large {
+      width: 13.5%; }
+    .percussion .body .square-group.small {
+      width: 4.5%;
+      transform: translate(0) rotate(0); }
+    .percussion .body .square-group:nth-child(1) .square:nth-of-type(1) {
+      transform: translate(130%, 0) rotate(47deg); }
+    .percussion .body .square-group:nth-child(1) .square:nth-of-type(2) {
+      transform: translate(17%, -35%) rotate(4deg); }
+    .percussion .body .square-group:nth-child(1) .square:nth-of-type(3) {
+      transform: translate(108%, 30%) rotate(38deg); }
+    .percussion .body .square-group:nth-child(1) .square:nth-of-type(4) {
+      transform: translate(37%, 23%) rotate(22deg); }
+    .percussion .body .square-group:nth-child(1) .square:nth-of-type(5) {
+      transform: translate(196%, 18%) rotate(-15deg); }
+    .percussion .body .square-group:nth-child(2) .square:nth-of-type(1) {
+      transform: translate(-60%, 80%) rotate(-12deg); }
+    .percussion .body .square-group:nth-child(2) .square:nth-of-type(2) {
+      transform: translate(862%, 300%) rotate(14deg); }
+    .percussion .body .square-group:nth-child(2) .square:nth-of-type(3) {
+      transform: translate(-150%, 288%) rotate(15deg); }
+    .percussion .body .square-group:nth-child(2) .square:nth-of-type(4) {
+      transform: translate(-1055%, 250%) rotate(30deg); }
+    .percussion .body .square-group:nth-child(2) .square:nth-of-type(5) {
+      transform: translate(115%, 190%) rotate(40deg); }
+    .percussion .body .square-group:nth-child(2) .square:nth-of-type(6) {
+      transform: translate(-248%, 360%) rotate(15deg); }
+    .percussion .body .square-group:nth-child(2) .square:nth-of-type(7) {
+      transform: translate(-158%, 420%) rotate(-5deg); }
+    .percussion .body .square-group:nth-child(2) .square:nth-of-type(8) {
+      transform: translate(220%, 540%) rotate(-30deg); }
+    .percussion .body .square-group:nth-child(2) .square:nth-of-type(9) {
+      transform: translate(-595%, 650%) rotate(15deg); }
+    .percussion .body .square-group:nth-child(3) .square:nth-of-type(1) {
+      transform: translate(-25%, 5%) rotate(-16deg); }
+    .percussion .body .square-group:nth-child(3) .square:nth-of-type(2) {
+      transform: translate(-159%, -56%) rotate(27deg); }
+    .percussion .body .square-group:nth-child(3) .square:nth-of-type(3) {
+      transform: translate(-32%, 44%) rotate(-26deg); }
+    .percussion .body .square-group:nth-child(3) .square:nth-of-type(4) {
+      transform: translate(-183%, 13%) rotate(-8deg); }
+    .percussion .body .square-group:nth-child(3) .square:nth-of-type(5) {
+      transform: translate(-85%, 18%) rotate(17deg); }
+  .percussion .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 12.5% 0 0; }
+    .percussion .footer p {
+      font-family: sans-serif;
+      font-weight: 200;
+      margin: 0; }
+      .percussion .footer p:nth-child(1) {
+        font-size: 1.2vw; }
+      .percussion .footer p:nth-child(2) {
+        font-size: .8vw; }
+
+@media screen and (min-width: 770px) {
+  .percussion .header .top p {
+    font-size: 1.3vw; }
+  .percussion .footer p:nth-child(1) {
+    font-size: .8vw; }
+  .percussion .footer p:nth-child(2) {
+    font-size: .6vw; } }
+
+@media screen and (min-width: 1025px) {
+  .percussion .header .top p {
+    font-size: .9vw; }
+  .percussion .footer p:nth-child(1) {
+    font-size: .6vw; }
+  .percussion .footer p:nth-child(2) {
+    font-size: .4vw; } }
