@@ -1,3 +1,19 @@
+/*****************************
+
+ Table of Contents
+
+ i. Page Styles
+ ii. Josef Albers - Interaction
+ iii. Josef Albers - Interaction of Color
+ iv. Provocative Percussion vol. i
+ v. Provocative Percussion vol. iii
+
+******************************/
+/*
+ *
+ * Page styles
+ *
+ */
 .debug * {
   border: 1px solid red; }
 
@@ -43,6 +59,11 @@ hr {
   .wrapper {
     margin: 50px 30vw; } }
 
+/*
+ *
+ * Josef Albers - Interaction
+ *
+ */
 .albers-interaction {
   position: relative;
   width: 100%;
@@ -127,6 +148,11 @@ hr {
   .albers-interaction .footer p {
     font-size: 0.5vw; } }
 
+/*
+ *
+ * Josef Albers - Interaction of Color, 50th Anniversary ed.
+ *
+ */
 .albers-color {
   border: 1px solid #aaa; }
   .albers-color .header {
@@ -241,6 +267,11 @@ hr {
     font-size: 1.25vw;
     padding-top: 2px; } }
 
+/*
+ *
+ * Provocative Percussion (vol. i), Albers cover
+ *
+ */
 .percussion {
   border: 1px solid #aaa;
   padding: 1.5% 3% 1%;
@@ -451,7 +482,9 @@ hr {
       transform: translate(0) rotate(0); } }
 
 /*
+ *
  * Provocative Percussion Vol. III
+ *
  */
 .percussion-vol3 {
   padding: 4% 3% 1%;
