@@ -2,6 +2,7 @@ var gulp = require( 'gulp' );
 var sass = require( 'gulp-sass' );
 var browserSync = require( 'browser-sync' ).create();
 
+var del = require( 'del' );
 var rev = require( 'gulp-rev' );
 var revRewrite = require( 'gulp-rev-rewrite' );
 
@@ -36,6 +37,9 @@ function revision(){
 		.pipe( rev.manifest() )
 		.pipe( gulp.dest( 'styles' ) )
 }
+function revdel(){
+	return del( ['styles/main-*.css'] );
+}
 function revwrite(){
 	var manifest = gulp.src( 'styles/rev-manifest.json' );
 
@@ -51,4 +55,4 @@ exports.revision = revision;
 exports.revwrite = revwrite;
 
 exports.default = serve;
-exports.revise = gulp.series( revision, revwrite );
+exports.revise = gulp.series( revdel, revision, revwrite );
