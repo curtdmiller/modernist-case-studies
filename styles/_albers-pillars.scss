@@ -1,0 +1,126 @@
+$p-white: #f7f5ea;
+$p-red: #d65432;
+$p-black: #14100b;
+
+.albers-pillars {
+  background-color: #fbf9f3;
+  .inner {
+    padding: 21%;
+    padding-bottom: 20%;
+    .image-block {
+      position: relative;
+      background-color: $p-white;
+      width: 100%;
+      .black {
+        background-color: $p-black;
+      }
+      .white {
+        background-color: $p-white;
+      }
+      .red {
+        background-color: $p-red;
+      }
+      .row {
+        // 25w x 28h
+        // each square is 4% of width
+        width: 100%;
+        height: 0;
+        padding-bottom: 4%;
+        transform: skew(0deg) rotate(0deg);
+        margin: 0;
+        @for $i from 1 through 25 {
+          .col-#{$i} {
+            width: $i * 4%;
+            height: 0;
+            padding-bottom: 4%;
+            float: left;
+            margin: 0;
+          }
+        }
+        @for $i from 1 through 24 {
+          .push-#{$i} {
+            margin-left: $i * 4%;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    padding: 0 6% 1.5% 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    p {
+      display: inline-block;
+      color: #e6e1d5;
+      font-size: .72vw;
+      font-family: helvetica, sans-serif;
+      font-weight: 600;
+    }
+  }
+}
+.albers-pillars.aot.touched {
+  .inner {
+    .image-block {
+      .row {
+        animation-name: pillarSkew;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+}
+@media screen and (any-hover: hover) {
+  .albers-pillars:hover {
+    .inner {
+      .image-block {
+        .row {
+          animation-name: pillarSkew;
+          animation-duration: 4s;
+          animation-iteration-count: infinite;
+        }
+      }
+    }
+  }
+}
+@keyframes pillarSkew {
+  0% {
+    transform: skew(0deg) rotate(0deg);
+  }
+  10% {
+    transform: skew(-45deg) rotate(10deg);
+  }
+  40% {
+    transform: skew(-45deg) rotate(10deg);
+  }
+  50% {
+    transform: skew(0deg) rotate(0deg);
+  }
+  60% {
+    transform: skew(45deg) rotate(-10deg);
+  }
+  90% {
+    transform: skew(45deg) rotate(-10deg);
+  }
+  100% {
+    transform: skew(0deg) rotate(0deg);
+  }
+}
+@media screen and (min-width: 770px) {
+  .albers-pillars {
+    .footer {
+      p {
+        font-size: .54vw;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1025px) {
+  .albers-pillars {
+    .footer {
+      p {
+        font-size: .37vw;
+      }
+    }
+  }
+}
