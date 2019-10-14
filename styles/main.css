@@ -8,6 +8,7 @@
  iv. Provocative Percussion vol. i
  v. Provocative Percussion vol. iii
  vi. Albers - Pillars
+ vii. Lustig - Haydn Society Bach Flute
 
 ******************************/
 /*
@@ -47,6 +48,9 @@ h1 {
 
 .caption {
   margin: 20px 0; }
+
+.italic {
+  font-style: italic; }
 
 hr {
   border: 1px solid #aaa;
@@ -1436,3 +1440,102 @@ hr {
 @media screen and (min-width: 1025px) {
   .albers-pillars .footer p {
     font-size: .37vw; } }
+
+.lustig-bach {
+  background-color: #e9e2db;
+  padding: 4%; }
+  .lustig-bach p, .lustig-bach ul {
+    transition: all 300ms; }
+  .lustig-bach .inner {
+    width: 100%; }
+    .lustig-bach .inner div {
+      padding-left: 13%;
+      margin: 0; }
+      .lustig-bach .inner div p {
+        margin: 0; }
+    .lustig-bach .inner .header {
+      background-color: #4a4849; }
+      .lustig-bach .inner .header p {
+        font-family: serif;
+        color: #e9e2db;
+        padding-top: 55%;
+        padding-bottom: 1.5%;
+        font-family: pulpo, serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 4.5vw;
+        letter-spacing: .5vw; }
+    .lustig-bach .inner .title {
+      position: relative; }
+      .lustig-bach .inner .title::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 10%;
+        width: 61%;
+        height: 100%;
+        background-color: #f27b3c;
+        transition: all 300ms; }
+      .lustig-bach .inner .title p {
+        position: relative;
+        width: 100%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 1.7vw;
+        font-weight: 200;
+        letter-spacing: 1px;
+        color: #4a4849; }
+    .lustig-bach .inner .toc {
+      background-color: #84accf;
+      font-size: 1.2vw;
+      color: #e9e2db; }
+      .lustig-bach .inner .toc ul {
+        list-style: none;
+        margin: 0;
+        padding: 1.5% 0 0; }
+        .lustig-bach .inner .toc ul li {
+          margin-bottom: 3.9%; }
+      .lustig-bach .inner .toc p {
+        letter-spacing: 1px; }
+      .lustig-bach .inner .toc .footer {
+        padding: 18% 0 8%; }
+        .lustig-bach .inner .toc .footer p {
+          color: black; }
+
+@media screen and (min-width: 770px) {
+  .lustig-bach .inner .header p {
+    font-size: 3.15vw;
+    letter-spacing: .5vw; }
+  .lustig-bach .inner .title p {
+    font-size: 1.19vw;
+    letter-spacing: 1px; }
+  .lustig-bach .inner .toc {
+    font-size: 0.84vw; }
+    .lustig-bach .inner .toc p {
+      letter-spacing: 1px; } }
+
+.lustig-bach.touched p, .lustig-bach.touched ul {
+  opacity: 0; }
+
+.lustig-bach.touched .inner .title::before {
+  left: 0;
+  width: 100%; }
+
+@media screen and (any-hover: hover) {
+  .lustig-bach:hover p, .lustig-bach:hover ul {
+    opacity: 0; }
+  .lustig-bach:hover .inner .title::before {
+    left: 0;
+    width: 100%; } }
+
+@media screen and (min-width: 1025px) {
+  .lustig-bach .inner .header p {
+    font-size: 2.25vw;
+    letter-spacing: .5vw; }
+  .lustig-bach .inner .title p {
+    font-size: 0.85vw;
+    letter-spacing: 1px; }
+  .lustig-bach .inner .toc {
+    font-size: 0.6vw; }
+    .lustig-bach .inner .toc p {
+      letter-spacing: 1px; } }
