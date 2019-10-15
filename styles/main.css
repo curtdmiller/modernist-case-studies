@@ -49,6 +49,10 @@ h1 {
 
 .caption {
   margin: 20px 0; }
+  .caption p {
+    margin: 0; }
+  .caption img {
+    width: 50%; }
 
 .italic {
   font-style: italic; }
