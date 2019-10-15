@@ -9,6 +9,7 @@
  v. Provocative Percussion vol. iii
  vi. Albers - Pillars
  vii. Lustig - Haydn Society Bach Flute
+ viii. Ives - Haydn Society Beethoven Sonatas
 
 ******************************/
 /*
@@ -1175,6 +1176,11 @@ hr {
   .percussion-vol3 .footer p {
     font-size: .3vw; } }
 
+/*
+ *
+ * Josef Albers - Pillars
+ *
+ */
 .albers-pillars {
   background-color: #fbf9f3; }
   .albers-pillars .inner {
@@ -1441,6 +1447,11 @@ hr {
   .albers-pillars .footer p {
     font-size: .37vw; } }
 
+/*
+ *
+ * Alvin Lustig - Haydn Society HSL-90
+ *
+ */
 .lustig-bach {
   background-color: #e9e2db;
   padding: 4%; }
@@ -1539,3 +1550,173 @@ hr {
     font-size: 0.6vw; }
     .lustig-bach .inner .toc p {
       letter-spacing: 1px; } }
+
+/*
+ *
+ * Norman C. Ives - Haydn Society HSL-110
+ *
+ */
+/*
+font-family: metronic-slab-narrow, serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: metronic-slab-narrow, serif;
+font-weight: 700;
+font-style: normal;
+*/
+.ives-beethoven {
+  position: relative;
+  background-color: #ad9f8b;
+  padding: 13% 15% 13% 13%; }
+  .ives-beethoven * {
+    margin: 0; }
+  .ives-beethoven .inner .title {
+    background-color: #685942; }
+    .ives-beethoven .inner .title > div {
+      padding-left: 3%;
+      padding-top: 2%;
+      background-color: #e7d9c5;
+      transform: skewX(15deg) translateX(4.7%);
+      transition: all 300ms; }
+      .ives-beethoven .inner .title > div p {
+        color: #685942;
+        display: inline-block;
+        transform: skewX(-28deg) translateX(13%);
+        transition: all 300ms; }
+      .ives-beethoven .inner .title > div p:first-child {
+        font-size: 19vw;
+        line-height: 18vw;
+        font-family: "agency-fb-compressed", sans-serif;
+        font-weight: 400;
+        letter-spacing: .3vw; }
+      .ives-beethoven .inner .title > div p:nth-child(2) {
+        font-size: 2.3vw;
+        font-family: 'metronic-slab-narrow', serif;
+        font-weight: 700;
+        font-style: normal; }
+    .ives-beethoven .inner .title > p {
+      padding-left: 6%;
+      padding-top: 2%;
+      color: #e7d9c5;
+      font-size: 19vw;
+      line-height: 18vw;
+      font-family: "agency-fb-compressed", sans-serif;
+      font-weight: 400;
+      letter-spacing: .3vw;
+      transform: skewX(-15deg) translateX(1%);
+      transition: all 300ms; }
+  .ives-beethoven .inner .toc {
+    background-color: #e7d9c5;
+    padding-left: 3%;
+    font-size: 2.3vw;
+    transform: skewX(-15deg) translateX(-4.4%);
+    transition: all 300ms; }
+    .ives-beethoven .inner .toc ul {
+      padding: 2% 0;
+      list-style: none; }
+      .ives-beethoven .inner .toc ul li {
+        font-size: 2vw;
+        font-family: 'metronic-slab-narrow', serif;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: .05vw;
+        color: #867b70; }
+        .ives-beethoven .inner .toc ul li:not(:last-child) {
+          margin-bottom: 9%; }
+  .ives-beethoven .credits {
+    position: absolute;
+    transform-origin: top left;
+    transform: rotate(-90deg) skew(-15deg);
+    left: 5%;
+    bottom: 38%;
+    transition: all 300ms; }
+    .ives-beethoven .credits p {
+      display: inline-block;
+      font-size: 1.5vw; }
+    .ives-beethoven .credits span.copyright {
+      position: relative;
+      margin-right: 1vw; }
+    .ives-beethoven .credits .label {
+      color: #483d35;
+      font-family: 'metronic-slab-narrow', serif;
+      font-weight: 700;
+      font-style: normal; }
+    .ives-beethoven .credits .series {
+      color: #483d35; }
+    .ives-beethoven .credits .catalog {
+      color: #e7d9c5;
+      font-family: 'metronic-slab-narrow', serif;
+      font-weight: 700;
+      font-style: normal; }
+
+.ives-beethoven.aot.touched {
+  position: relative; }
+  .ives-beethoven.aot.touched .inner .title > div {
+    transform: skewX(0) translateX(0);
+    padding-left: 0; }
+    .ives-beethoven.aot.touched .inner .title > div p {
+      transform: skewX(0) translateX(0); }
+  .ives-beethoven.aot.touched .inner .title p {
+    padding-left: 3%;
+    transform: skewX(0) translateX(0); }
+  .ives-beethoven.aot.touched .inner .toc {
+    transform: skewX(0) translateX(0); }
+  .ives-beethoven.aot.touched .credits {
+    position: absolute;
+    transform-origin: top left;
+    transform: rotate(0) skew(0);
+    left: 13%;
+    bottom: 5%; }
+
+@media screen and (min-width: 770px) {
+  .ives-beethoven .inner .title > div p:first-child {
+    font-size: 13.3vw;
+    line-height: 12.6vw; }
+  .ives-beethoven .inner .title > div p:nth-child(2) {
+    font-size: 1.61vw; }
+  .ives-beethoven .inner .title > p {
+    font-size: 13.3vw;
+    line-height: 12.6vw; }
+  .ives-beethoven .inner .toc {
+    font-size: 1.61vw; }
+    .ives-beethoven .inner .toc ul li {
+      font-size: 1.4vw; }
+  .ives-beethoven .credits p {
+    font-size: 1.05vw; } }
+
+@media screen and (min-width: 1025px) {
+  .ives-beethoven .inner .title > div p:first-child {
+    font-size: 9.5vw;
+    line-height: 9vw; }
+  .ives-beethoven .inner .title > div p:nth-child(2) {
+    font-size: 1.15vw; }
+  .ives-beethoven .inner .title > p {
+    font-size: 9.5vw;
+    line-height: 9vw; }
+  .ives-beethoven .inner .toc {
+    font-size: 1.15vw; }
+    .ives-beethoven .inner .toc ul li {
+      font-size: 1vw; }
+  .ives-beethoven .credits p {
+    font-size: 0.75vw; } }
+
+@media screen and (any-hover: hover) {
+  .ives-beethoven:hover {
+    position: relative; }
+    .ives-beethoven:hover .inner .title > div {
+      transform: skewX(0) translateX(0);
+      padding-left: 0; }
+      .ives-beethoven:hover .inner .title > div p {
+        transform: skewX(0) translateX(0); }
+    .ives-beethoven:hover .inner .title p {
+      padding-left: 3%;
+      transform: skewX(0) translateX(0); }
+    .ives-beethoven:hover .inner .toc {
+      transform: skewX(0) translateX(0); }
+    .ives-beethoven:hover .credits {
+      position: absolute;
+      transform-origin: top left;
+      transform: rotate(0) skew(0);
+      left: 13%;
+      bottom: 5%; } }
